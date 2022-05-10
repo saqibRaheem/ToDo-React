@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import IncDec from './component/IncDec';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <IncDec />
   </React.StrictMode>,
   document.getElementById('root')
 );

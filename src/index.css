@@ -5,9 +5,170 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  background-color: #111;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} */
+/* body{
+  height: 100%;
+  background-color: #111;
+} */
+.main_div{
+width: 100%;;
+height: 100vh;
+background: #111;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+.center_div{
+  width: 25%;
+  height: 80vh;
+  background-color: #111;
+  box-shadow: 2px 2px 25px -2px  whitesmoke;
+  border-radius: 15px;
+}
+h1{
+  /* font-size: 3rem;
+  font-weight: 50;
+  margin: 1rem 0 3rem;
+  text-align: center; */
+  color: rgb(240, 232, 232);
+  background:transparent;
+  background-color:rgb(119, 119, 117) ;
+  padding: 6px 0 2px 0;
+  margin-bottom:10px ;
+  box-shadow: 2px 2px 15px -2px whitesmoke;
+}
+input{
+  text-align: center;
+  height: 30px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 500;
+  width: 60%;
+  border-bottom: 2px solid whitesmoke;
+  color: #fff;
+  outline: none;
+}
+
+.newbtn{
+  min-height: 40px;
+  width: 37px;
+  border-radius: 50%;
+  border-color: rgb(248, 244, 244);
+  color: rgb(241, 129, 129);
+  font-size: 35px;
+  border: none;
+  outline: none;
+  margin-left: 10px;
+  box-shadow: 1px 1px 15px -5px rgb(228, 214, 214);
+}
+.newbtn:hover{
+  background-color: #1316dd;
+}
+ol{
+  margin-top: 30px;
+}
+ol li{
+  padding-left: 0px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-transform: capitalize;
+}
+.todo_style{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+.todo_style {
+  width: 20px;
+  height: 20px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* background-color:rgb(241, 235, 235); */
+  border-radius: 50%;
+  margin: 0 15px 0 35px;
+  color: rgb(83, 79, 88);
+  box-shadow: 5px 5px 15px -5px yellow;
+}
+.todo_style :hover{
+  background-color: rgb(66, 36, 36);
+}
+.todo_style .fatimes:hover .list_style{
+ color: #E00;
+}
+@media(max-width:768){
+  .center_div{
+    width: 55%;
+  }
+
+.todo_style .btn{
+margin: 0 15px 0 15px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+button{
+  margin-left: 5px;
+  min-height: 40px;
+  color: #fff;
+  font-size: 30px;
+}
+}
+/* Extra Work */
+.card{
+  background-color: #111;
+}
+.styling{
+  font-weight: 800;
+  color: lime;
+}
+.editbtn{
+  font-size: 1.4rem;
+  margin: 0 0.5rem;
+  background: none;
+  outline: none;
+  color: lime;
+  border: none;
+
+}
+.removebtn{
+  font-size: 1.4rem;
+  margin: 0 0.5rem;
+  background: none;
+  outline: none;
+  color: #E00;
+  border: none;
+}
+.item{
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+  
+}
+.item-input{
+  background-color: none;
+  outline: rgb(237, 237, 243);
+  color: #fff;
+  border:white;
+  width: 200px;
+  font-size: 1.4rem;
+ border-bottom: white;
 }
